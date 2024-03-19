@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/imagens/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <img class="logoAlura" src="./imagens/VectorAlura.svg" alt="Logo da Alura"/>
+      </nav>
+    </header>
+    
+    <main class="main">
+      
+      <section class="entrada-mensagem">
+           <textarea class="entrada-texto" cols="41" rows="10" placeholder="Digite seu texto:" spellcheck="true"></textarea>
+        
+        <div class="informacao">
+            <label for="" entrada-texto>Apenas letras minusculas e sem acento</label>
+        </div>
+
+        <div class="botoes-div">
+          <button class="btn-criptografar" onclick="btnCriptografar()">Criptografar</button>
+          <button class="btn-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+        </div>
+      </section>
+
+      <section class="saida-mensagem">
+          <textarea class="saida-textarea" cols="20" rows="8" id="inputTexto" type="text" wrap="soft"></textarea>
+          <img src="./imagens/PersonaSearch.svg" class="figuraProcura" id="figuraProcura" />
+          <h2 class="mensagem-informacao" id="mensagem-informacao">Nenhuma mensagem encontrada.</h2>
+          <p class="mensagem-aviso" id="mensagem-aviso">Digite um texto que você deseja criptografar ou descriptografar.</p>
+          
+          <button class="btn-copiar" id="btn-copiar" onclick="btnCopiar()">Copiar</button>
+          
+      </section>
+
+    </main>
+    <script src="script.js"></script>
+
+   <footer class="rodape">  
+        <div class="contato__links">
+            <a href="https://github.com/cyberthau" class="link-github">
+            <img src="./imagens/Githubgithub.svg" class="imagem-github">  Desenvolvido por cyberthau | 2024 </a>
+        </div>
+    </footer>    
+</html>

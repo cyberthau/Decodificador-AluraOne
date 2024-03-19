@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #9290C3;
+    --secondary-color: #535C91;
+    --tertiary-color: #1B1A55;
+    --quarternary-color: #070F2B;
+    --black-color: #151515;
+    --white-color: #F6F5F5;
+
+}
+
+*{
+    background: var(--primary-color);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logoAlura {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    justify-content:space-evenly;
+}
+
+.entrada-mensagem {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 30px;
+    align-items: center;
+}
+
+
+.entrada-texto {
+    border: none;
+    color: var(--quarternary-color);
+    margin-top: 20px;
+    text-transform: lowercase;
+}
+
+::placeholder { color: var(--quarternary-color);}
+    .entrada-texto:focus{
+        outline: none;
+    }
+
+.botoes-div {
+    display: flex;
+    margin-top: 18px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.btn-criptografar {
+    background-color: var(--quarternary-color);
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid var(--quarternary-color);
+    width: 336px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 22px 0 rgba(0,0,0,0.19);
+}
+
+.btn-descriptografar {
+    background-color: var(--quarternary-color);
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid var(--quarternary-color);
+    width: 336px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 22px 0 rgba(0,0,0,0.19);
+}
+
+.informacao {
+    color: var(--quarternary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.saida-mensagem {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: var(--quarternary-color);
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 30px;
+    align-items: center;
+    resize: none;
+    order: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 22px 0 rgba(0,0,0,0.19);
+
+}
+
+.saida-mensagem:focus {
+       outline: none;
+}
+
+
+.saida-textarea {
+    padding: 20px;
+    order: 2;
+    border: none;
+    border-radius: 24px;
+    color: var(--quarternary-color);
+    font-weight: bold;
+    background: var(--secondary-color);
+    margin-top: 20px;
+    text-transform: lowercase;
+    resize: none;
+    text-align: center;
+}
+
+.figuraProcura {
+    order: 3;
+    padding: 40px;
+    background-size: contain;
+    background-position: center;
+    background-color: var(--secondary-color);
+    position: absolute;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mensagem-informacao {
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--quarternary-color);
+    font-style: bold;
+    flex-wrap: wrap;
+    order: 4;
+    
+}
+
+.mensagem-aviso {
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    order: 5;
+}
+
+
+.btn-copiar {
+    background-color: var(--quarternary-color);
+    justify-content: center;
+    border: 1px solid var(--quarternary-color);
+    width: 336px;
+    text-align: center;
+    position: static;
+    border-radius: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    order: 6;
+    gap: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 22px 0 rgba(0,0,0,0.19);
+}
+
+.rodape {
+    display: grid;
+    color: var(--primary-color);
+    background-color: var(--quarternary-color);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+
+.contato__links {
+    color: var(--primary-color);
+    background: var(--quarternary-color);
+    justify-content: center;
+}
+
+.link-github:any-link {
+    color: var(--primary-color);
+    background-color: var(--quarternary-color);
+    align-items: baseline;
+    text-decoration: none;
+
+}
+
+::selection { color: var(--primary-color);}
+       .link-github:any-link{
+         text-decoration: none;
+}
+
+.imagem-github {
+    background-color: var(--quarternary-color);
+    width: 25px;
+    height: 25px;
+}
